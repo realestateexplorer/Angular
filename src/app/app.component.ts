@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-deploy';
+  //ng build --output-path docs --base-href /Angular/
+//git add --all
+//git commit -m "Update1"
+//git push --set-upstream ng master
 }
