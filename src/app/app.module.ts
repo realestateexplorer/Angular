@@ -3,6 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//import {MatTreeModule} from '@angular/material/tree';
+import {NestedTreeControl} from '@angular/cdk/tree';
+import {MatTreeNestedDataSource, MatTreeModule} from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -10,7 +15,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTreeModule,
+    MatButtonModule, 
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
